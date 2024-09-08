@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom, #2C003E 0%, #030303 100%);
+    background-attachment: fixed;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.cadastro-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-box h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;
+    text-align: left;
+}
+
+.input-group {
+    /* position: relative; */
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.input-group .input-icon {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 21px;
+    background: white;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    color: #B197FC;
+    cursor: pointer;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid transparent;
+}
+
+.submit-container {
+    margin-top: 20px;
+    color: #E0E0E0;
+    margin-right: 30%;
+}
+
+.submit-container input[type="submit"] {
+    width: calc(100% - 30px); /* Ajusta para ocupar a largura disponível menos margens */
+    max-width: 350px; /* Define um tamanho máximo fixo */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #8A2BE2;
+    color: #fff;
+    border-radius: 21px;
+    cursor: pointer;
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Garante que o botão seja um bloco e ocupe a largura definida */
+}
+
+.submit-container input[type="submit"]:hover {
+    background-color: #4d0095;
+}
+
+.login-link {
+    margin-top: 19px;
+    /* text-align: center; */
+    margin-left: 22%;
+}
+
+.login-link a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.info-container {
+    width: 60%;
+    display: flex;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-container h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 21px;
+    margin-bottom: 20px;
+    margin-top: -9%;
+}
+
+.info-container p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.info-container .team-nexus {
+    font-size: 15px;
+    margin-left: 60%;
+    margin-top: 15px;
+}
+
+/* Estilo para o contêiner dos termos */
+.terms-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0px;
+    justify-content: flex-start;
+}
+
+/* Estilo para o checkbox */
+.terms-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Estilo para os labels dos termos */
+.terms-container label {
+    margin: 0;
+}
+
+/* Ajusta o link dentro do label */
+.terms-container a {
+    color: #E0E0E0;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .input-group input {
+        width: 100%;
+        padding: 8px 38px 8px 8px;
+        font-size: 14px;
+    }
+
+    .cadastro-box {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group i {
+        font-size: 14px;
+    }
+
+    /* Ajusta a caixa de termos para que os itens fiquem alinhados horizontalmente */
+    .terms-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Media query para telas muito pequenas (ex: celulares menores) */
+@media (max-width: 480px) {
+    .input-group input {
+        width: 100%;
+        padding: 6px 36px 6px 6px;
+        font-size: 12px;
+    }
+
+    .cadastro-box {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .input-group i {
+        font-size: 12px;
+    }
+
+    .terms-container {
+        font-size: 12px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-container {
+        display: none;
+    }
+
+    .cadastro-box {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

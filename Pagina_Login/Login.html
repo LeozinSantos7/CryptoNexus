@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoNexus - Login faça seu login é receba 1.000 moedas!</title>
+    <link rel="icon" type="image/jpeg" href="./Assets/NexusLogo.jpg">
+    <link rel="stylesheet" href="Login_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Seja bem-vindo</h2>
+            <form action="">
+                <label for="email" style="font-size: 19px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Email</label>
+
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Ex: Cryptonexus@gmail.com.br" required>
+                    <i class="fa-regular fa-envelope" style="color: #B197FC;"></i>
+                </div>
+
+                <div class="password-container">
+                    <label for="password" style="font-size: 19px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Senha</label>
+                    <input type="password" id="password" placeholder="" required>
+                    <button type="button" id="toggle-password" class="toggle-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+
+                <input type="checkbox" id="remember">
+                <label for="remember" style="font-size: 17px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Mantenha-me conectado</label>
+                <a href="#" class="forgot-password" id="forgot-password-link">Esqueceu sua senha?</a>
+
+                <div class="button-group">
+                    <button type="submit">Entrar</button>
+                    <a href="/Pagina_Cadastro/Cadastro.html"><button type="button" class="register">Cadastrar-se</button></a>
+                </div>
+            </form>
+            <p class="social-text">Ou, acesse com: </p>
+
+            <div class="social-login">
+                <a href="" class="icon-link">
+                    <img src="./Icons/Google_Icon.png" alt="Icon-Google" class="Icon">
+                    Google
+                </a>
+                <a href="" class="icon-link">
+                    <img src="./Icons/Facebook_Icon.png" alt="Icon-Facebook" class="icon">
+                    Facebook
+                </a>
+                <a href="" class="icon-link">
+                    <img src="./Icons/GitHub_Icon.png" alt="Icon-GitHub" class="icon">
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h1>NEXUS</h1>
+            <p>
+                Bem-vindo à CryptoNexus, a plataforma definitiva para
+                quem deseja desbravar o universo das criptomoedas. Aqui,
+                você tem a oportunidade de aprender como investir com segurança,
+                simular operações e testar estratégias em um ambiente sem riscos reais.
+            </p>
+            <div class="team-signature">~ Equipe Nexus</div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Preencha o campo abaixo com seu e-mail e após isso clique em recuperar senha</p>
+            <div class="input-container">
+                <input type="email" id="recover-email" placeholder="Seu e-mail" required>
+                <i class="fa-regular fa-envelope" style="color: #B197FC;"></i>
+            </div>
+            <div class="modal-buttons">
+                <button id="cancel-btn">Cancelar</button>
+                <button id="recover-btn">Recuperar Senha</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Login_Script.js"></script>
+</body>
+</html>
