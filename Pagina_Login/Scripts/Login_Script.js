@@ -1,17 +1,3 @@
-document.getElementById('toggle-password').addEventListener('click', function () {
-    const passwordInput = document.getElementById('password');
-    const icon = this.querySelector('i');
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        icon.classList.remove('fa-eye');
-        icon.classList.add('fa-eye-slash');
-    } else {
-        passwordInput.type = 'password';
-        icon.classList.remove('fa-eye-slash');
-        icon.classList.add('fa-eye');
-    }
-});
-
 document.getElementById('forgot-password-link').addEventListener('click', function () {
     document.getElementById('forgot-password-modal').style.display = 'block';
 });
@@ -57,3 +43,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password');
+    const toggleButton = document.getElementById('password-icon');
+    
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleButton.classList.remove('fa-eye');
+        toggleButton.classList.add('fa-eye-slash');
+    } else {
+        passwordInput.type = 'password';
+        toggleButton.classList.remove('fa-eye-slash');
+        toggleButton.classList.add('fa-eye');
+    }
+}

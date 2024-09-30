@@ -1,0 +1,7 @@
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 60%;
+}

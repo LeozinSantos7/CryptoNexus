@@ -21,36 +21,35 @@
                     <input type="email" id="email" placeholder="Ex: Cryptonexus@gmail.com.br" required>
                     <i class="fa-regular fa-envelope" style="color: #B197FC;"></i>
                 </div>
-
                 <div class="password-container">
-                    <label for="password" style="font-size: 19px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Senha</label>
-                    <input type="password" id="password" placeholder="" required>
-                    <button type="button" id="toggle-password" class="toggle-password">
-                        <i class="fa-regular fa-eye"></i>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="●●●●●●">
+                    <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">
+                        <i class="fas fa-eye" id="password-icon"></i>
                     </button>
                 </div>
-
                 <input type="checkbox" id="remember">
                 <label for="remember" style="font-size: 17px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Mantenha-me conectado</label>
                 <a href="#" class="forgot-password" id="forgot-password-link">Esqueceu sua senha?</a>
 
                 <div class="button-group">
-                    <button type="submit">Entrar</button>
+                    <button type="submit" class="btn-entrar">Entrar</button>
                     <a href="/Pagina_Cadastro/Cadastro.html"><button type="button" class="register">Cadastrar-se</button></a>
                 </div>
             </form>
-            <p class="social-text">Ou, acesse com: </p>
+
+           <p class="social-text">Ou, acesse com: </p>
 
             <div class="social-login">
-                <a href="" class="icon-link">
+                <a href="YOUR_GOOGLE_OAUTH_URL" class="icon-link">
                     <img src="./Icons/Google_Icon.png" alt="Icon-Google" class="Icon">
                     Google
                 </a>
-                <a href="" class="icon-link">
+                <a href="YOUR_FACEBOOK_OAUTH_URL" class="icon-link">
                     <img src="./Icons/Facebook_Icon.png" alt="Icon-Facebook" class="icon">
                     Facebook
                 </a>
-                <a href="" class="icon-link">
+                <a href="YOUR_GITHUB_OAUTH_URL" class="icon-link">
                     <img src="./Icons/GitHub_Icon.png" alt="Icon-GitHub" class="icon">
                     GitHub
                 </a>
@@ -85,6 +84,6 @@
         </div>
     </div>
 
-    <script src="./Login_Script.js"></script>
+    <script src="./Scripts/Login_Script.js"></script>
 </body>
 </html>
