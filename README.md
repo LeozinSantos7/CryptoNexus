@@ -1,6 +1,3 @@
-Aqui está a versão ajustada do seu arquivo README para o projeto **CryptoNexus**:
-
----
 
 # 🚀 CryptoNexus
 
